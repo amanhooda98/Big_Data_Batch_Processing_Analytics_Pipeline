@@ -16,7 +16,7 @@ default_args = {
 dag = DAG(
     'spark_batch_job',
     schedule_interval=None,  # You can set a suitable schedule interval here
-    start_date=dt.datetime(2023,9,26),  # Adjust the start date as needed
+    start_date=dt.datetime(2023,9,29),  # Adjust the start date as needed
     catchup=False,
 )
 
