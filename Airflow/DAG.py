@@ -32,7 +32,7 @@ ssh_hook = SSHHook(
 upload_to_data_lake_commands = """
 source ~/.profile
 cd ~
-spark-submit /home/amanhd9/notebooks/upload_to_data_lake.py
+spark-submit /home/amanhd9/Big_Data_Batch_Processing_Pipeline/Spark/upload_to_data_lake.py
 """
 
 # Create an SSHOperator to run the Spark submit job
@@ -46,7 +46,7 @@ T1 = SSHOperator(
 upload_to_data_warehouse_commands = """
 source ~/.profile
 cd ~
-spark-submit /home/amanhd9/notebooks/upload_to_data_warehouse.py
+spark-submit /home/amanhd9/Big_Data_Batch_Processing_Pipeline/Spark/upload_to_data_warehouse.py
 """
 
 T2 = SSHOperator(
@@ -56,5 +56,18 @@ T2 = SSHOperator(
     dag=dag,
 )
 
-T1>>T2
+transform_upload_commands = """
+source ~/.profile
+cd ~
+spark-submit /home/amanhd9/Big_Data_Batch_Processing_Pipeline/Spark/transform_upload.py
+"""
+
+T3 = SSHOperator(
+    task_id='transform_upload_commands',
+    ssh_hook=ssh_hook,
+    command=transform_upload_commands,
+    dag=dag,
+)
+
+T1>>T2>>T3
 
