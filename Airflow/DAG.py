@@ -22,7 +22,7 @@ dag = DAG(
 
 # Define the SSHHook with the remote server information
 ssh_hook = SSHHook(
-    remote_host='34.30.45.117',  # Replace with your remote server's IP
+    remote_host='IP.AD.DR.ESS',  # Replace with your remote server's IP
     username='amanhd9',
     key_file='/home/amanhd9/.ssh/gcp',  # Replace with your SSH key file path
     cmd_timeout=None
