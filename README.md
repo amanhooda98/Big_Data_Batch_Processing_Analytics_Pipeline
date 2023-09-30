@@ -30,3 +30,5 @@ Contains data from a Turkish retail chain for years 2017 to 2019 consisting of 2
 
 ![Alt text](Images/visualization.png)
 
+This Dashboard shows top 10 revenue earning stores by their store id , Top 10 revenue earning cities and top 10 most sold products for the month of January and February of 2017
+
