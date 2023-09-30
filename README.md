@@ -15,5 +15,18 @@ Contains data from a Turkish retail chain for years 2017 to 2019 consisting of 2
 ### Architecture
 ![Alt text](Images/FlowChart.png)
 
+### Tools & Technologies
+
+- Cloud - [**Google Cloud Platform**](https://cloud.google.com)
+- Infrastructure as Code software - [**Terraform**](https://www.terraform.io)
+- Orchestration - [**Airflow**](https://airflow.apache.org)
+- Transformation and Batch Processing - [**Spark**](https://spark.apache.org/)
+- Data Lake - [**Google Cloud Storage**](https://cloud.google.com/storage)
+- Data Warehouse and Relational DB simulation - [**BigQuery**](https://cloud.google.com/bigquery)
+- Data Visualization - [**Google Looker Studio**](https://datastudio.google.com/overview)
+- Language - [**Python**](https://www.python.org)
+
+### Final Result
+
 ![Alt text](Images/visualization.png)
 
