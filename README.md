@@ -35,9 +35,9 @@ This Dashboard shows top 10 revenue earning stores by their store id , Top 10 re
 ### Project Walkthrough
 
 The cloud infrastructure for this project consists of :
-1. 2 Linux VM instances, one each for running Spark and Airflow
-2. 1 Google cloud storage bucket which will act as a data lake here
-3. 2 Google big query Schemas,  
+* 2 Linux VM instances, one each for running Spark and Airflow
+* 1 Google cloud storage bucket which will act as a data lake here
+* 2 Google big query Schemas,  
     a.Staging which will act as a data warehouse    
     b.Production which will act as a relational DB storing processed data  
 
