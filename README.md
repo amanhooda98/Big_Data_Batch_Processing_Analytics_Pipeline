@@ -50,6 +50,6 @@ airflow standalone
 ```  
 ![Alt text](<Images/Screenshot (4).png>)
 
-This start the airflow web server and the same can be accesed at localhost:8080
+This starts the airflow web server and the same can be accesed at localhost:8080
 
 
