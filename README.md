@@ -41,7 +41,5 @@ The cloud infrastructure for this project consists of :
     a.Staging which will act as a data warehouse    
     b.Production which will act as a relational DB storing processed data  
 
-```bash
-airflow standalone
-```  
+
 
