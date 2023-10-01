@@ -55,7 +55,19 @@ Spark\upload_to_data_warehouse.py
 ```
 this spark job converts the files into dedicated bigquery tables :- sales-data, stores-data in the staging schema.
 
-![Alt text](<Images/Screenshot (10).png>)
+![Alt text](<Images/Screenshot (10).png>)  
+
+3.The table data is read from the data warehouse using :-  
+
+```bash
+Spark\transform_upload.py  
+```
+this spark job also transforms the data for revenue and sales calculations and writes it to :  
+a. revenue-data table in the production schema   
+b. data split into monthly tables, which will be later used to make the comparison dashboard
+
+![Alt text](Images/Screenshot(7).png)  
+
 
 Execution:
 
