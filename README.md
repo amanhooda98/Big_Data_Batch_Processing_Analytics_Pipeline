@@ -41,5 +41,15 @@ The cloud infrastructure for this project consists of :
     a.Staging which will act as a data warehouse    
     b.Production which will act as a relational DB storing processed data  
 
+Execution:
+
+Start the Airflow instance on the dedicated server using the command :
+
+```bash
+airflow standalone
+```  
+![Alt text](<Images/Screenshot (4).png>)
+
+This start the airflow web server and the same can be accesed at localhost:8080
 
 
