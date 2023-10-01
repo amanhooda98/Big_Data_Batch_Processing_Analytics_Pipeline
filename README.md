@@ -41,6 +41,12 @@ The cloud infrastructure for this project consists of :
     a.Staging which will act as a data warehouse    
     b.Production which will act as a relational DB storing processed data  
 
+1.The data files in CSV format have been stored in the spark instance,  
+```bash
+Spark\upload_to_data_lake.py
+```
+This spark job picks the files , coverts them to partitioned parquet format and stores them to the google cloud storage bucket, this will be acting as the data lake for this project
+
 Execution:
 
 Start the Airflow instance on the dedicated server using the command :
