@@ -53,8 +53,9 @@ airflow standalone
 This starts the airflow web server and the same can be accesed at localhost:8080  
 opening the DAG from the DAGs page, the graph view looks like the above picture.  
 
-The DAG can be started using the button as highlighted in the picture below, also notice the CPU usage of the spark instance, all cores being utilized fully, showing the multithreaded nature  
+The DAG can be started using the button as highlighted in the picture below.  
+The status of the first task changes to running,also notice the CPU usage of the spark instance, all cores being utilized fully, showing the multithreaded nature  
 
-
+![Alt text](<Images/Screenshot (6).png>)
 
 
