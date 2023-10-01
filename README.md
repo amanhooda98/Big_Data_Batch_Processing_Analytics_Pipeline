@@ -64,12 +64,21 @@ Spark\transform_upload.py
 ```
 this spark job also transforms the data for revenue and sales calculations and writes it to :  
 a. revenue-data table in the production schema   
-b. data split into monthly tables, which will be later used to make the comparison dashboard
+b. data split into monthly tables, which will be later used to make the comparison dashboard  
+
+The Walkthrough of the transformation steps can be found in :  
+
+```bash
+Spark\Transformation_Walkthrough.ipynb
+```
 
 ![Alt text](Images/Screenshot(7).png)  
 
 
-Execution:
+The monthly tables were used to make the dashboard in Looker studio by linking it to BigQuery.  
+
+
+### Execution:
 
 Start the Airflow instance on the dedicated server using the command :
 
@@ -80,7 +89,10 @@ airflow standalone
 
 This starts the airflow web server and the same can be accesed at localhost:8080  
 opening the DAG from the DAGs page, the graph view looks like the above picture.  
-
+The DAG is defined in :  
+```bash
+Airflow\DAG.py
+```
 The DAG can be started using the button as highlighted in the picture below.  
 The status of the first task changes to running,also notice the CPU usage of the spark instance, all cores being utilized fully, showing the multithreaded nature  
 
@@ -89,4 +101,13 @@ The status of the first task changes to running,also notice the CPU usage of the
 The Whole Pipeline completed in 8 minutes and 20 seconds as seen in the picture below:  
 
 ![Alt text](<Images/Screenshot (9).png>)  
+
+### What more can be done!  
+
+* Adding a streaming service such as Kafka to Process data as it comes,  
+resulting in a live dashboard.  
+
+
+    
+
 
