@@ -45,7 +45,17 @@ The cloud infrastructure for this project consists of :
 ```bash
 Spark\upload_to_data_lake.py
 ```
-This spark job picks the files , coverts them to partitioned parquet format and stores them to the google cloud storage bucket, this will be acting as the data lake for this project
+This spark job picks the files , coverts them to partitioned parquet format and stores them to the google cloud storage bucket, this will be acting as the data lake for this project.  
+![Alt text](Images/Screenshot(12).png)
+
+2.The Parquet files are picked up from the google cloud storage by  
+
+```bash
+Spark\upload_to_data_warehouse.py
+```
+this spark job converts the files into dedicated bigquery tables :- sales-data, stores-data in the staging schema.
+
+![Alt text](<Images/Screenshot (10).png>)
 
 Execution:
 
