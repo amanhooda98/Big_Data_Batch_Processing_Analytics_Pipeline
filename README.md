@@ -58,4 +58,7 @@ The status of the first task changes to running,also notice the CPU usage of the
 
 ![Alt text](<Images/Screenshot (6).png>)
 
+The Whole Pipeline completed in 8 minutes and 20 seconds as seen in the picture below:  
+
+![Alt text](<Images/Screenshot (9).png>)  
 
